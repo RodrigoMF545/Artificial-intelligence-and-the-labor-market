@@ -1,0 +1,234 @@
+column,presente_em
+AIAcc,ambos
+AIComplex,ambos
+AISelect,ambos
+AISent,ambos
+AIThreat,ambos
+Age,ambos
+CompTotal,ambos
+ConvertedCompYearly,ambos
+Country,ambos
+Currency,ambos
+DatabaseAdmired,ambos
+DatabaseHaveWorkedWith,ambos
+DatabaseWantToWorkWith,ambos
+DevType,ambos
+EdLevel,ambos
+Employment,ambos
+ICorPM,ambos
+Industry,ambos
+JobSat,ambos
+JobSatPoints_1,ambos
+JobSatPoints_10,ambos
+JobSatPoints_11,ambos
+JobSatPoints_4,ambos
+JobSatPoints_5,ambos
+JobSatPoints_6,ambos
+JobSatPoints_7,ambos
+JobSatPoints_8,ambos
+JobSatPoints_9,ambos
+LanguageAdmired,ambos
+LanguageHaveWorkedWith,ambos
+LanguageWantToWorkWith,ambos
+LearnCode,ambos
+MainBranch,ambos
+OfficeStackAsyncAdmired,ambos
+OfficeStackAsyncHaveWorkedWith,ambos
+OfficeStackAsyncWantToWorkWith,ambos
+OpSysPersonal use,ambos
+OpSysProfessional use,ambos
+OrgSize,ambos
+PlatformAdmired,ambos
+PlatformHaveWorkedWith,ambos
+PlatformWantToWorkWith,ambos
+PurchaseInfluence,ambos
+RemoteWork,ambos
+ResponseId,ambos
+SOAccount,ambos
+SOComm,ambos
+SOPartFreq,ambos
+SOVisitFreq,ambos
+WebframeAdmired,ambos
+WebframeHaveWorkedWith,ambos
+WebframeWantToWorkWith,ambos
+WorkExp,ambos
+YearsCode,ambos
+year,ambos
+AIBen,só 2024
+AIChallenges,só 2024
+AIEthics,só 2024
+AINextLess integrated,só 2024
+AINextMore integrated,só 2024
+AINextMuch less integrated,só 2024
+AINextMuch more integrated,só 2024
+AINextNo change,só 2024
+AISearchDevAdmired,só 2024
+AISearchDevHaveWorkedWith,só 2024
+AISearchDevWantToWorkWith,só 2024
+AIToolCurrently Using,só 2024
+AIToolInterested in Using,só 2024
+AIToolNot interested in Using,só 2024
+BuildvsBuy,só 2024
+BuyNewTool,só 2024
+Check,só 2024
+CodingActivities,só 2024
+EmbeddedAdmired,só 2024
+EmbeddedHaveWorkedWith,só 2024
+EmbeddedWantToWorkWith,só 2024
+Frequency_1,só 2024
+Frequency_2,só 2024
+Frequency_3,só 2024
+Frustration,só 2024
+Knowledge_1,só 2024
+Knowledge_2,só 2024
+Knowledge_3,só 2024
+Knowledge_4,só 2024
+Knowledge_5,só 2024
+Knowledge_6,só 2024
+Knowledge_7,só 2024
+Knowledge_8,só 2024
+Knowledge_9,só 2024
+LearnCodeOnline,só 2024
+MiscTechAdmired,só 2024
+MiscTechHaveWorkedWith,só 2024
+MiscTechWantToWorkWith,só 2024
+NEWCollabToolsAdmired,só 2024
+NEWCollabToolsHaveWorkedWith,só 2024
+NEWCollabToolsWantToWorkWith,só 2024
+NEWSOSites,só 2024
+OfficeStackSyncAdmired,só 2024
+OfficeStackSyncHaveWorkedWith,só 2024
+OfficeStackSyncWantToWorkWith,só 2024
+ProfessionalCloud,só 2024
+ProfessionalQuestion,só 2024
+ProfessionalTech,só 2024
+SOHow,só 2024
+SurveyEase,só 2024
+SurveyLength,só 2024
+TBranch,só 2024
+TechDoc,só 2024
+TechEndorse,só 2024
+TimeAnswering,só 2024
+TimeSearching,só 2024
+ToolsTechAdmired,só 2024
+ToolsTechHaveWorkedWith,só 2024
+ToolsTechWantToWorkWith,só 2024
+YearsCodePro,só 2024
+AIAgentChallengesNeutral,só 2025
+AIAgentChallengesSomewhat agree,só 2025
+AIAgentChallengesSomewhat disagree,só 2025
+AIAgentChallengesStrongly agree,só 2025
+AIAgentChallengesStrongly disagree,só 2025
+AIAgentChange,só 2025
+AIAgentExtWrite,só 2025
+AIAgentExternal,só 2025
+AIAgentImpactNeutral,só 2025
+AIAgentImpactSomewhat agree,só 2025
+AIAgentImpactSomewhat disagree,só 2025
+AIAgentImpactStrongly agree,só 2025
+AIAgentImpactStrongly disagree,só 2025
+AIAgentKnowWrite,só 2025
+AIAgentKnowledge,só 2025
+AIAgentObsWrite,só 2025
+AIAgentObserveSecure,só 2025
+AIAgentOrchWrite,só 2025
+AIAgentOrchestration,só 2025
+AIAgent_Uses,só 2025
+AIAgents,só 2025
+AIExplain,só 2025
+AIFrustration,só 2025
+AIHuman,só 2025
+AILearnHow,só 2025
+AIModelsAdmired,só 2025
+AIModelsChoice,só 2025
+AIModelsHaveEntry,só 2025
+AIModelsHaveWorkedWith,só 2025
+AIModelsWantEntry,só 2025
+AIModelsWantToWorkWith,só 2025
+AIOpen,só 2025
+AIToolCurrently mostly AI,só 2025
+AIToolCurrently partially AI,só 2025
+AIToolDon't plan to use AI for this task,só 2025
+AIToolPlan to mostly use AI,só 2025
+AIToolPlan to partially use AI,só 2025
+AgentUsesGeneral,só 2025
+CommPlatformAdmired,só 2025
+CommPlatformHaveEntr,só 2025
+CommPlatformHaveWorkedWith,só 2025
+CommPlatformWantEntr,só 2025
+CommPlatformWantToWorkWith,só 2025
+DatabaseChoice,só 2025
+DatabaseHaveEntry,só 2025
+DatabaseWantEntry,só 2025
+DevEnvHaveEntry,só 2025
+DevEnvWantEntry,só 2025
+DevEnvsAdmired,só 2025
+DevEnvsChoice,só 2025
+DevEnvsHaveWorkedWith,só 2025
+DevEnvsWantToWorkWith,só 2025
+EmploymentAddl,só 2025
+JobSatPoints_13,só 2025
+JobSatPoints_14,só 2025
+JobSatPoints_15,só 2025
+JobSatPoints_15_TEXT,só 2025
+JobSatPoints_16,só 2025
+JobSatPoints_2,só 2025
+JobSatPoints_3,só 2025
+LanguageChoice,só 2025
+LanguagesHaveEntry,só 2025
+LanguagesWantEntry,só 2025
+LearnCodeAI,só 2025
+LearnCodeChoose,só 2025
+NewRole,só 2025
+OfficeStackHaveEntry,só 2025
+OfficeStackWantEntry,só 2025
+PlatformChoice,só 2025
+PlatformHaveEntry,só 2025
+PlatformWantEntry,só 2025
+SODuration,só 2025
+SOFriction,só 2025
+SOTagsAdmired,só 2025
+SOTagsHaveEntry,só 2025
+SOTagsHaveWorkedWith,só 2025
+SOTagsWant Entry,só 2025
+SOTagsWantToWorkWith,só 2025
+SO_Actions_1,só 2025
+SO_Actions_10,só 2025
+SO_Actions_15,só 2025
+SO_Actions_15_TEXT,só 2025
+SO_Actions_16,só 2025
+SO_Actions_3,só 2025
+SO_Actions_4,só 2025
+SO_Actions_5,só 2025
+SO_Actions_6,só 2025
+SO_Actions_7,só 2025
+SO_Actions_9,só 2025
+SO_Dev_Content,só 2025
+TechEndorseIntro,só 2025
+TechEndorse_1,só 2025
+TechEndorse_13,só 2025
+TechEndorse_13_TEXT,só 2025
+TechEndorse_2,só 2025
+TechEndorse_3,só 2025
+TechEndorse_4,só 2025
+TechEndorse_5,só 2025
+TechEndorse_6,só 2025
+TechEndorse_7,só 2025
+TechEndorse_8,só 2025
+TechEndorse_9,só 2025
+TechOppose_1,só 2025
+TechOppose_11,só 2025
+TechOppose_13,só 2025
+TechOppose_15,só 2025
+TechOppose_15_TEXT,só 2025
+TechOppose_16,só 2025
+TechOppose_2,só 2025
+TechOppose_3,só 2025
+TechOppose_5,só 2025
+TechOppose_7,só 2025
+TechOppose_9,só 2025
+ToolCountPersonal,só 2025
+ToolCountWork,só 2025
+WebframeChoice,só 2025
+WebframeHaveEntry,só 2025
+WebframeWantEntry,só 2025

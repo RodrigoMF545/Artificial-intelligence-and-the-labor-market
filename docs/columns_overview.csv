@@ -1,0 +1,289 @@
+year,column,dtype,pct_missing,n_unique,examples
+2024,ResponseId,int64,0.0,65437,1 | 2 | 3
+2024,MainBranch,object,0.0,5,I am a developer by profession | I am learning to code | I code primarily as a hobby
+2024,Age,object,0.0,8,Under 18 years old | 35-44 years old | 45-54 years old
+2024,Employment,object,0.0,110,"Employed, full-time | Student, full-time | Student, full-time;Not employed, but looking for work"
+2024,RemoteWork,object,16.2,3,"Remote | In-person | Hybrid (some remote, some in-person)"
+2024,Check,object,0.0,1,Apples
+2024,CodingActivities,object,16.8,118,Hobby | Hobby;Contribute to open-source projects;Other (please specify): | I don’t code outside of work
+2024,EdLevel,object,7.1,8,"Primary/elementary school | Bachelor’s degree (B.A., B.S., B.Eng., etc.) | Master’s degree (M.A., M.S., M.Eng., MBA, etc"
+2024,LearnCode,object,7.6,418,"Books / Physical media | Books / Physical media;Colleague;On the job training;Other online resources (e.g., videos, blog"
+2024,LearnCodeOnline,object,24.8,10853,Technical documentation;Blogs;Books;Written Tutorials;Stack Overflow | Technical documentation;Blogs;Books;Written Tutor
+2024,TechDoc,object,37.5,113,API document(s) and/or SDK document(s);User guides or README files found in the source repository;First-party knowledge 
+2024,YearsCode,object,8.5,52,20 | 37 | 4
+2024,YearsCodePro,object,21.1,52,17 | 27 | 7
+2024,DevType,object,9.2,34,"Developer, full-stack | Developer Experience | Student"
+2024,OrgSize,object,27.4,10,"100 to 499 employees | 2 to 9 employees | Just me - I am a freelancer, sole proprietor, etc."
+2024,PurchaseInfluence,object,27.6,3,I have some influence | I have little or no influence | I have a great deal of influence
+2024,BuyNewTool,object,31.0,215,Start a free trial;Ask developers I know/work with;Ask a generative AI tool;Visit developer communities like Stack Overf
+2024,BuildvsBuy,object,33.7,3,Is ready-to-go but also customizable for growth and targeted use cases | Is set up to be customized and needs to be engi
+2024,TechEndorse,object,33.3,386,APIs;Customization;Integrated developer community;Quality support system;AI tool integration;Reputation for quality and 
+2024,Country,object,9.9,185,United States of America | United Kingdom of Great Britain and Northern Ireland | Canada
+2024,Currency,object,28.7,142,PKR	Pakistani rupee | EUR European Euro | USD	United States dollar
+2024,CompTotal,float64,48.4,3337,2040000.0 | 28000.0 | 85000.0
+2024,LanguageHaveWorkedWith,object,8.7,23864,Bash/Shell (all shells);Go;HTML/CSS;Java;JavaScript;Python;TypeScript | C# | C;C++;HTML/CSS;Java;JavaScript;PHP;PowerShe
+2024,LanguageWantToWorkWith,object,14.8,22769,Bash/Shell (all shells);Go;HTML/CSS;Java;JavaScript;Kotlin;Python;TypeScript | C# | HTML/CSS;Java;JavaScript;PowerShell;
+2024,LanguageAdmired,object,22.3,12335,Bash/Shell (all shells);Go;HTML/CSS;Java;JavaScript;Python;TypeScript | C# | HTML/CSS;Java;JavaScript;PowerShell;Python;
+2024,DatabaseHaveWorkedWith,object,23.2,9050,Dynamodb;MongoDB;PostgreSQL | Firebase Realtime Database | MongoDB;MySQL;PostgreSQL;SQLite
+2024,DatabaseWantToWorkWith,object,35.0,8478,PostgreSQL | Firebase Realtime Database | MongoDB;MySQL;PostgreSQL
+2024,DatabaseAdmired,object,41.1,4051,PostgreSQL | Firebase Realtime Database | MongoDB;MySQL;PostgreSQL
+2024,PlatformHaveWorkedWith,object,35.3,5467,Amazon Web Services (AWS);Heroku;Netlify | Google Cloud | Amazon Web Services (AWS);Fly.io;Heroku
+2024,PlatformWantToWorkWith,object,47.2,4784,Amazon Web Services (AWS);Heroku;Netlify | Google Cloud | Amazon Web Services (AWS);Vercel
+2024,PlatformAdmired,object,52.1,2556,Amazon Web Services (AWS);Heroku;Netlify | Google Cloud | Amazon Web Services (AWS)
+2024,WebframeHaveWorkedWith,object,31.0,12235,Express;Next.js;Node.js;React | ASP.NET CORE | jQuery;Next.js;Node.js;React;WordPress
+2024,WebframeWantToWorkWith,object,41.1,11654,Express;Htmx;Node.js;React;Remix | ASP.NET CORE | jQuery;Next.js;Node.js;React
+2024,WebframeAdmired,object,46.6,5460,Express;Node.js;React | ASP.NET CORE | jQuery;Next.js;Node.js;React
+2024,EmbeddedHaveWorkedWith,object,66.1,1630,Rasberry Pi | CMake;Cargo;Rasberry Pi | CMake
+2024,EmbeddedWantToWorkWith,object,73.1,1471,Rasberry Pi | CMake;Rasberry Pi | Arduino;Rasberry Pi
+2024,EmbeddedAdmired,object,74.4,1053,Rasberry Pi | CMake;Rasberry Pi | Arduino;Rasberry Pi
+2024,MiscTechHaveWorkedWith,object,39.7,9288,.NET (5+) ;.NET Framework (1.0 - 4.8);.NET MAUI | NumPy;Pandas;Ruff;TensorFlow | .NET (5+) ;.NET Framework (1.0 - 4.8);R
+2024,MiscTechWantToWorkWith,object,49.6,10263,.NET (5+) ;.NET Framework (1.0 - 4.8);.NET MAUI | .NET (5+) ;.NET Framework (1.0 - 4.8);RabbitMQ | .NET (5+) ;Roslyn
+2024,MiscTechAdmired,object,54.8,4917,.NET (5+) ;.NET Framework (1.0 - 4.8);.NET MAUI | .NET (5+) ;.NET Framework (1.0 - 4.8);RabbitMQ | .NET (5+) ;Roslyn
+2024,ToolsTechHaveWorkedWith,object,19.8,19883,Docker;Homebrew;Kubernetes;npm;Vite;Webpack | MSBuild | Docker;npm;Pip
+2024,ToolsTechWantToWorkWith,object,29.6,16549,Docker;Homebrew;Kubernetes;npm;Vite;Webpack | MSBuild | Docker;Kubernetes;npm
+2024,ToolsTechAdmired,object,32.8,11804,Docker;Homebrew;Kubernetes;npm;Vite;Webpack | MSBuild | Docker;npm
+2024,NEWCollabToolsHaveWorkedWith,object,12.0,14168,PyCharm;Visual Studio Code;WebStorm | Visual Studio | Vim
+2024,NEWCollabToolsWantToWorkWith,object,20.4,9751,PyCharm;Visual Studio Code;WebStorm | Visual Studio | Vim
+2024,NEWCollabToolsAdmired,object,22.5,7545,PyCharm;Visual Studio Code;WebStorm | Visual Studio | Vim
+2024,OpSysPersonal use,object,11.1,2488,MacOS;Windows | Windows | Other (please specify):
+2024,OpSysProfessional use,object,19.0,2032,MacOS | Windows | Windows;Windows Subsystem for Linux (WSL)
+2024,OfficeStackAsyncHaveWorkedWith,object,26.5,6014,GitHub Discussions;Markdown File;Obsidian;Stack Overflow for Teams | Markdown File | Jira
+2024,OfficeStackAsyncWantToWorkWith,object,40.5,3801,GitHub Discussions;Markdown File;Obsidian | Markdown File | Jira
+2024,OfficeStackAsyncAdmired,object,43.1,2661,GitHub Discussions;Markdown File;Obsidian | Markdown File | Jira
+2024,OfficeStackSyncHaveWorkedWith,object,15.1,5049,Microsoft Teams;Slack | Google Chat;Google Meet;Microsoft Teams;Zoom | Discord;Whatsapp
+2024,OfficeStackSyncWantToWorkWith,object,28.6,3205,Slack | Google Chat;Google Meet;Zoom | Discord;Whatsapp
+2024,OfficeStackSyncAdmired,object,31.7,2555,Slack | Google Chat;Google Meet;Zoom | Discord;Whatsapp
+2024,AISearchDevHaveWorkedWith,object,32.1,2663,ChatGPT;GitHub Copilot;OpenAI Codex | ChatGPT | ChatGPT;Google Gemini
+2024,AISearchDevWantToWorkWith,object,43.9,2361,ChatGPT;GitHub Copilot | ChatGPT | ChatGPT;Google Gemini
+2024,AISearchDevAdmired,object,45.7,1488,ChatGPT;GitHub Copilot | ChatGPT | ChatGPT;Google Gemini
+2024,NEWSOSites,object,7.9,32,I have never visited Stack Overflow or the Stack Exchange network | Stack Overflow for Teams (private knowledge sharing 
+2024,SOVisitFreq,object,9.0,5,Multiple times per day | Daily or almost daily | Less than once per month or monthly
+2024,SOAccount,object,9.0,3,Yes | No | Not sure/can't remember
+2024,SOPartFreq,object,30.9,6,Multiple times per day | Daily or almost daily | Less than once per month or monthly
+2024,SOHow,object,9.9,111,Quickly finding code solutions;Finding reliable guidance from community-vetted answers;Showcase expertise with code solu
+2024,SOComm,object,9.6,6,"Yes, definitely | No, not really | No, not at all"
+2024,AISelect,object,6.9,3,"Yes | No, and I don't plan to | No, but I plan to soon"
+2024,AISent,object,29.9,6,Very favorable | Favorable | Indifferent
+2024,AIBen,object,43.6,113,Increase productivity | Increase productivity;Greater efficiency;Improve collaboration;Speed up learning;Improve accurac
+2024,AIAcc,object,43.0,5,Somewhat trust | Somewhat distrust | Neither trust nor distrust
+2024,AIComplex,object,43.4,5,"Bad at handling complex tasks | Good, but not great at handling complex tasks | Neither good or bad at handling complex "
+2024,AIToolCurrently Using,object,46.4,1310,Learning about a codebase;Project planning;Writing code;Documenting code;Debugging and getting help;Deployment and monit
+2024,AIToolInterested in Using,object,53.1,1949,Testing code;Committing and reviewing code;Predictive analytics | Documenting code;Testing code;Committing and reviewing
+2024,AIToolNot interested in Using,object,62.7,1531,Learning about a codebase;Project planning | Committing and reviewing code;Deployment and monitoring;Predictive analytic
+2024,AINextMuch more integrated,object,79.5,700,Learning about a codebase;Project planning;Writing code;Documenting code;Debugging and getting help;Deployment and monit
+2024,AINextNo change,object,80.9,539,Writing code;Debugging and getting help | Search for answers | Documenting code
+2024,AINextMore integrated,object,62.7,884,Writing code;Debugging and getting help;Search for answers | Learning about a codebase;Writing code;Documenting code;Deb
+2024,AINextLess integrated,object,96.4,249,Debugging and getting help;Search for answers | Search for answers | Writing code
+2024,AINextMuch less integrated,object,98.2,286,Writing code;Generating content or synthetic data | Writing code | Learning about a codebase;Writing code
+2024,AIThreat,object,31.7,3,No | Yes | I'm not sure
+2024,AIEthics,object,36.5,126,Circulating misinformation or disinformation;Missing or incorrect attribution for sources of data | Circulating misinfor
+2024,AIChallenges,object,42.6,232,"Don’t trust the output or answers | Don’t trust the output or answers;AI tools lack context of codebase,  internal archi"
+2024,TBranch,object,32.0,2,No | Yes
+2024,ICorPM,object,54.5,2,Individual contributor | People manager
+2024,WorkExp,float64,54.7,51,17.0 | 15.0 | 12.0
+2024,Knowledge_1,object,56.2,5,Agree | Strongly agree | Neither agree nor disagree
+2024,Knowledge_2,object,57.2,5,Disagree | Agree | Neither agree nor disagree
+2024,Knowledge_3,object,57.1,5,Agree | Strongly agree | Neither agree nor disagree
+2024,Knowledge_4,object,57.2,5,Agree | Disagree | Strongly agree
+2024,Knowledge_5,object,57.4,5,Agree | Neither agree nor disagree | Strongly agree
+2024,Knowledge_6,object,57.4,5,Neither agree nor disagree | Strongly agree | Strongly disagree
+2024,Knowledge_7,object,57.6,5,Disagree | Agree | Strongly agree
+2024,Knowledge_8,object,57.6,5,Agree | Neither agree nor disagree | Disagree
+2024,Knowledge_9,object,57.8,5,Agree | Neither agree nor disagree | Strongly disagree
+2024,Frequency_1,object,56.6,5,3-5 times a week | 1-2 times a week | Never
+2024,Frequency_2,object,56.7,5,6-10 times a week | 1-2 times a week | 3-5 times a week
+2024,Frequency_3,object,57.7,5,6-10 times a week | 1-2 times a week | 3-5 times a week
+2024,TimeSearching,object,55.8,5,30-60 minutes a day | 60-120 minutes a day | 15-30 minutes a day
+2024,TimeAnswering,object,55.9,5,60-120 minutes a day | 15-30 minutes a day | 30-60 minutes a day
+2024,Frustration,object,56.8,954,Amount of technical debt;Number of software tools in use;Tracking my work;Showing my contributions | Amount of technical
+2024,ProfessionalTech,object,57.6,514,DevOps function;Automated testing;Observability tools | Knowledge sharing community | DevOps function;Automated testing;
+2024,ProfessionalCloud,object,56.5,3,Cloud only (single or multi-cloud) | Hybrid (on-prem and cloud) | On-prem
+2024,ProfessionalQuestion,object,56.0,9,Internal Developer portal | A coworker | Traditional public search engine
+2024,Industry,object,55.9,15,Healthcare | Software Development | Banking/Financial Services
+2024,JobSatPoints_1,float64,55.2,91,0.0 | 50.0 | 10.0
+2024,JobSatPoints_4,float64,55.1,72,0.0 | 100.0 | 10.0
+2024,JobSatPoints_5,float64,55.1,78,0.0 | 30.0 | 10.0
+2024,JobSatPoints_6,float64,55.0,93,0.0 | 25.0 | 30.0
+2024,JobSatPoints_7,float64,55.0,91,0.0 | 10.0 | 90.0
+2024,JobSatPoints_8,float64,55.0,89,0.0 | 10.0 | 90.0
+2024,JobSatPoints_9,float64,55.0,85,0.0 | 15.0 | 20.0
+2024,JobSatPoints_10,float64,55.0,75,0.0 | 10.0 | 90.0
+2024,JobSatPoints_11,float64,55.0,79,0.0 | 10.0 | 100.0
+2024,SurveyLength,object,14.1,3,Appropriate in length | Too long | Too short
+2024,SurveyEase,object,14.1,3,Easy | Neither easy nor difficult | Difficult
+2024,ConvertedCompYearly,float64,64.2,6113,7322.0 | 30074.0 | 91295.0
+2024,JobSat,float64,55.5,11,8.0 | 5.0 | 10.0
+2024,year,int64,0.0,1,2024
+2025,ResponseId,int64,0.0,49191,1 | 2 | 3
+2025,MainBranch,object,0.0,6,"I am a developer by profession | I am not primarily a developer, but I write code sometimes as part of my work/studies |"
+2025,Age,object,0.0,7,25-34 years old | 35-44 years old | 45-54 years old
+2025,EdLevel,object,2.1,8,"Master’s degree (M.A., M.S., M.Eng., MBA, etc.) | Associate degree (A.A., A.S., etc.) | Bachelor’s degree (B.A., B.S., B"
+2025,Employment,object,1.7,6,"Employed | Independent contractor, freelancer, or self-employed | Student"
+2025,EmploymentAddl,object,8.8,171,"Caring for dependents (children, elderly, etc.) | None of the above | Caring for dependents (children, elderly, etc.);Vo"
+2025,WorkExp,float64,12.8,72,8.0 | 2.0 | 10.0
+2025,LearnCodeChoose,object,4.7,3,"Yes, I am not new to coding but am learning new coding techniques or programming language | No, I am not new to coding a"
+2025,LearnCode,object,31.8,2767,"Online Courses or Certification (includes all media types);Other online resources (e.g. standard search, forum, online c"
+2025,LearnCodeAI,object,8.1,5,"Yes, I learned how to use AI-enabled tools for my personal curiosity and/or hobbies | Yes, I learned how to use AI-enabl"
+2025,AILearnHow,object,42.6,1677,AI CodeGen tools or AI-enabled apps | AI CodeGen tools or AI-enabled apps;Technical documentation (is generated for/by t
+2025,YearsCode,float64,12.5,78,14.0 | 10.0 | 12.0
+2025,DevType,object,11.2,32,"Developer, mobile | Developer, back-end | Developer, front-end"
+2025,OrgSize,object,30.5,9,"20 to 99 employees | 500 to 999 employees | 10,000 or more employees"
+2025,ICorPM,object,32.4,2,People manager | Individual contributor
+2025,RemoteWork,object,31.3,5,"Remote | Hybrid (some in-person, leans heavy to flexibility) | In-person"
+2025,PurchaseInfluence,object,23.9,5,"Yes, I influenced the purchase of a substantial addition to the tech stack | No | Yes, I endorsed a tool that was open-s"
+2025,TechEndorseIntro,object,23.7,3,Work | Personal Project | School
+2025,TechEndorse_1,float64,26.9,14,10.0 | 13.0 | 12.0
+2025,TechEndorse_2,float64,26.9,14,7.0 | 1.0 | 2.0
+2025,TechEndorse_3,float64,26.9,14,9.0 | 2.0 | 3.0
+2025,TechEndorse_4,float64,26.9,14,6.0 | 9.0 | 7.0
+2025,TechEndorse_5,float64,26.9,14,3.0 | 4.0 | 5.0
+2025,TechEndorse_6,float64,26.9,14,11.0 | 3.0 | 10.0
+2025,TechEndorse_7,float64,26.9,14,12.0 | 13.0 | 8.0
+2025,TechEndorse_8,float64,26.9,14,1.0 | 5.0 | 11.0
+2025,TechEndorse_9,float64,26.9,14,8.0 | 7.0 | 4.0
+2025,TechEndorse_13,float64,26.9,14,14.0 | 11.0 | 13.0
+2025,TechEndorse_13_TEXT,object,95.9,1575,usefullness | Currently maintained | European
+2025,TechOppose_1,float64,30.4,15,15.0 | 14.0 | 8.0
+2025,TechOppose_2,float64,30.4,15,7.0 | 1.0 | 5.0
+2025,TechOppose_3,float64,30.4,15,8.0 | 13.0 | 2.0
+2025,TechOppose_5,float64,30.4,15,12.0 | 10.0 | 4.0
+2025,TechOppose_7,float64,30.4,15,11.0 | 9.0 | 13.0
+2025,TechOppose_9,float64,30.4,15,1.0 | 3.0 | 12.0
+2025,TechOppose_11,float64,30.4,14,6.0 | 4.0 | 9.0
+2025,TechOppose_13,float64,30.4,15,13.0 | 2.0 | 4.0
+2025,TechOppose_16,float64,30.4,15,3.0 | 5.0 | 11.0
+2025,TechOppose_15,float64,30.4,16,16.0 | 15.0 | 14.0
+2025,TechOppose_15_TEXT,object,96.7,1212,AI | Presence of AI or AI agents | Pushing AI Features
+2025,Industry,object,31.6,15,Fintech | Retail and Consumer Services | Software Development
+2025,JobSatPoints_1,float64,49.3,15,3.0 | 10.0 | 9.0
+2025,JobSatPoints_2,float64,49.3,15,1.0 | 8.0 | 6.0
+2025,JobSatPoints_3,float64,49.3,15,4.0 | 3.0 | 7.0
+2025,JobSatPoints_4,float64,49.3,15,9.0 | 11.0 | 5.0
+2025,JobSatPoints_5,float64,49.3,15,5.0 | 12.0 | 8.0
+2025,JobSatPoints_6,float64,49.3,15,10.0 | 1.0 | 12.0
+2025,JobSatPoints_7,float64,49.3,15,12.0 | 6.0 | 1.0
+2025,JobSatPoints_8,float64,49.3,15,11.0 | 2.0 | 5.0
+2025,JobSatPoints_9,float64,49.3,15,2.0 | 11.0 | 10.0
+2025,JobSatPoints_10,float64,49.3,15,6.0 | 4.0 | 11.0
+2025,JobSatPoints_11,float64,49.3,15,7.0 | 3.0 | 12.0
+2025,JobSatPoints_13,float64,49.3,15,13.0 | 12.0 | 3.0
+2025,JobSatPoints_14,float64,49.3,15,14.0 | 10.0 | 13.0
+2025,JobSatPoints_15,float64,49.3,15,15.0 | 13.0 | 1.0
+2025,JobSatPoints_16,float64,49.3,15,8.0 | 5.0 | 10.0
+2025,JobSatPoints_15_TEXT,object,98.7,571,Not applicable | All are there in my case are and are at equal level | Working on 'big picture' work (e.g. combatting cl
+2025,AIThreat,object,26.7,3,I'm not sure | No | Yes
+2025,NewRole,object,27.8,5,I have neither consider or transitioned into a new career or industry | I have transitioned into a new career and/or ind
+2025,ToolCountWork,float64,43.9,114,7.0 | 6.0 | 3.0
+2025,ToolCountPersonal,float64,48.0,87,3.0 | 5.0 | 10.0
+2025,Country,object,28.0,177,Ukraine | Netherlands | India
+2025,Currency,object,28.0,142,EUR European Euro | UAH Ukrainian hryvnia | USD United States dollar
+2025,CompTotal,float64,49.5,2678,52800.0 | 90000.0 | 2214000.0
+2025,LanguageChoice,object,34.5,2,Yes | No
+2025,LanguageHaveWorkedWith,object,35.6,15478,Bash/Shell (all shells);Dart;SQL | Java | Dart;HTML/CSS;JavaScript;TypeScript
+2025,LanguageWantToWorkWith,object,45.0,13740,Dart | Java;Python;Swift | Dart;HTML/CSS;JavaScript;TypeScript
+2025,LanguageAdmired,object,52.3,8088,Dart | Java | Dart;HTML/CSS;JavaScript;TypeScript
+2025,LanguagesHaveEntry,object,91.9,1896,"5 | MQL4 | Pascal, PL/I, REXX"
+2025,LanguagesWantEntry,object,93.6,1413,"1 | MQL5 | Pascal, PL/I, REXX"
+2025,DatabaseChoice,object,35.6,2,Yes | No
+2025,DatabaseHaveWorkedWith,object,48.1,6670,Cloud Firestore;PostgreSQL | Dynamodb;MongoDB | MongoDB;MySQL;PostgreSQL
+2025,DatabaseWantToWorkWith,object,59.9,5478,Dynamodb;MongoDB | Firebase Realtime Database;MongoDB | Elasticsearch;Oracle;PostgreSQL
+2025,DatabaseAdmired,object,64.8,2756,Dynamodb;MongoDB | MongoDB | Elasticsearch;Oracle;PostgreSQL
+2025,DatabaseHaveEntry,object,95.6,1128,"5 | D1, NeonDB | tableplus"
+2025,DatabaseWantEntry,object,96.9,837,4 | Lightning Memory-Mapped Database | NeonDB
+2025,PlatformChoice,object,36.4,2,Yes | No
+2025,PlatformHaveWorkedWith,object,50.7,18802,Amazon Web Services (AWS);Cloudflare;Firebase;Google Cloud;Gradle | Amazon Web Services (AWS);Datadog;Docker;Homebrew;Ku
+2025,PlatformWantToWorkWith,object,60.5,13343,Amazon Web Services (AWS);Datadog;Docker;Homebrew;Kubernetes;Maven (build tool);Terraform | Amazon Web Services (AWS);Fi
+2025,PlatformAdmired,object,63.8,11035,Amazon Web Services (AWS);Datadog;Docker;Homebrew;Kubernetes;Maven (build tool);Terraform | Firebase;npm;pnpm | Amazon W
+2025,PlatformHaveEntry,object,92.0,1838,5 | Openshift | hex
+2025,PlatformWantEntry,object,93.7,1391,"4 | hex | condo, mamba, micromamba"
+2025,WebframeChoice,object,36.6,2,No | Yes
+2025,WebframeHaveWorkedWith,object,53.3,7418,Spring Boot | Next.js;Node.js;React | Angular;ASP.NET;ASP.NET Core;Flask;jQuery
+2025,WebframeWantToWorkWith,object,64.1,5727,Spring Boot | Next.js;Node.js;React | Angular;ASP.NET Core;Flask
+2025,WebframeAdmired,object,68.1,3173,Spring Boot | Next.js;Node.js;React | Angular;ASP.NET Core;Flask
+2025,WebframeHaveEntry,object,93.3,1676,akka | 4 | Perl Dancer
+2025,WebframeWantEntry,object,94.7,1370,Solid.js | akka | 4
+2025,DevEnvsChoice,object,36.8,2,Yes | No
+2025,DevEnvsHaveWorkedWith,object,47.1,7765,Android Studio;Notepad++;Visual Studio;Visual Studio Code;Xcode | IntelliJ IDEA;PyCharm;Visual Studio Code;Xcode | Visua
+2025,DevEnvsWantToWorkWith,object,58.1,5413,IntelliJ IDEA;PyCharm;Visual Studio Code;Xcode | Visual Studio Code;Windsurf | IntelliJ IDEA;Jupyter Notebook/JupyterLab
+2025,DevEnvsAdmired,object,60.4,3941,IntelliJ IDEA;PyCharm;Visual Studio Code;Xcode | Visual Studio Code | IntelliJ IDEA;Jupyter Notebook/JupyterLab;Notepad+
+2025,DevEnvHaveEntry,object,94.4,983,Emacs | c++ builder | emacs
+2025,DevEnvWantEntry,object,95.7,738,Emacs | emacs | GoLand
+2025,SOTagsHaveWorkedWith,object,63.6,1798,Google Gemini | Amazon Bedrock | Large Language Model;Google Gemini
+2025,SOTagsWantToWorkWith,object,72.4,2159,Google Gemini;Shadcn/ui | Large Language Model | Odoo;Large Language Model;RAG
+2025,SOTagsAdmired,object,75.1,1138,Google Gemini | Large Language Model | RAG
+2025,SOTagsHaveEntry,object,99.1,347,"5 | None of these | OpenMP, ROCm, Level Zero"
+2025,SOTagsWant Entry,object,99.1,323,4 | Not listed | DaisyUI
+2025,OpSysPersonal use,object,36.1,1903,Windows;MacOS;Android | Windows;MacOS;iOS;iPadOS | MacOS;Android
+2025,OpSysProfessional use,object,41.3,1371,Windows;MacOS;Android;iOS;iPadOS | MacOS | Windows;Ubuntu
+2025,OfficeStackAsyncHaveWorkedWith,object,39.3,6684,Confluence;GitHub;GitLab;Jira;Markdown File | Confluence;GitHub;Jira | GitHub;GitLab;Jira
+2025,OfficeStackAsyncWantToWorkWith,object,52.8,3927,Markdown File | Confluence;GitHub;Jira | GitHub;GitLab;Jira
+2025,OfficeStackAsyncAdmired,object,54.9,2964,Markdown File | Confluence;GitHub;Jira | GitHub;GitLab;Jira
+2025,OfficeStackHaveEntry,object,94.7,1197,4 | No | Whimsical
+2025,OfficeStackWantEntry,object,96.7,809,5 | No | Whimsical
+2025,CommPlatformHaveWorkedWith,object,38.9,6108,"Stack Overflow;Reddit;GitHub (public projects, not private repos);YouTube;LinkedIn;Medium | Stack Overflow;Discord;Reddi"
+2025,CommPlatformWantToWorkWith,object,52.5,4781,"Stack Overflow;Discord;Reddit;Dev.to;Hacker News;GitHub (public projects, not private repos);Slack (public channels, not"
+2025,CommPlatformAdmired,object,53.5,4223,"Stack Overflow;Discord;Reddit;Dev.to;Hacker News;GitHub (public projects, not private repos);Slack (public channels, not"
+2025,CommPlatformHaveEntr,object,97.0,675,5 | Codidact | Discourse (Rust forum)
+2025,CommPlatformWantEntr,object,97.6,582,5 | Mastodon | Codidact
+2025,AIModelsChoice,object,38.5,2,Yes | No
+2025,AIModelsHaveWorkedWith,object,66.9,2284,openAI GPT (chatbot models);openAI Image generating models;openAI Reasoning models | openAI GPT (chatbot models) | Gemin
+2025,AIModelsWantToWorkWith,object,75.9,1940,openAI GPT (chatbot models) | Gemini (Flash general purpose models);Gemini (Pro Reasoning models);openAI GPT (chatbot mo
+2025,AIModelsAdmired,object,77.1,1433,openAI GPT (chatbot models) | Gemini (Flash general purpose models);openAI GPT (chatbot models) | Anthropic: Claude Sonn
+2025,AIModelsHaveEntry,object,98.4,459,Copilot integrated in visual studio | Claude | Mellum
+2025,AIModelsWantEntry,object,99.0,299,Mellum | Firefly | Copilot
+2025,SOAccount,object,33.3,3,Yes | Not sure/can't remember | No
+2025,SOVisitFreq,object,33.5,7,A few times per week | Multiple times per day | A few times per month or weekly
+2025,SODuration,object,33.7,7,Between 5 and 10 years | Between 10 and 15 years | Between 3 and 5 years
+2025,SOPartFreq,object,34.5,8,"I have never participated in Q&A on Stack Overflow | Infrequently, less than once per year | A few times per month or we"
+2025,SO_Dev_Content,object,53.6,1756,Chat (people);Message Boards;Long-form articles;Videos;Coding challenges;Logic games/puzzles;Lists of recommendations (t
+2025,SO_Actions_1,float64,46.6,15,1.0 | 6.0 | 3.0
+2025,SO_Actions_16,float64,50.5,10,10.0 | 1.0 | 9.0
+2025,SO_Actions_3,float64,46.6,15,6.0 | 5.0 | 4.0
+2025,SO_Actions_4,float64,46.6,15,2.0 | 8.0 | 5.0
+2025,SO_Actions_5,float64,46.6,15,3.0 | 2.0 | 1.0
+2025,SO_Actions_6,float64,46.6,15,7.0 | 4.0 | 2.0
+2025,SO_Actions_9,float64,46.6,15,8.0 | 9.0 | 7.0
+2025,SO_Actions_7,float64,46.6,15,9.0 | 10.0 | 6.0
+2025,SO_Actions_10,float64,46.6,15,11.0 | 12.0 | 6.0
+2025,SO_Actions_15,float64,46.6,15,15.0 | 2.0 | 1.0
+2025,SO_Actions_15_TEXT,object,98.3,764,I don't use stsck overflow | I only visit StackOverflow to get answers to my questions | Learn what other people are wor
+2025,SOComm,object,35.5,6,"Neutral | Yes, somewhat | No, not really"
+2025,SOFriction,object,37.4,5,"Rarely, almost never | About half of the time | I don't use AI or AI-enabled tools"
+2025,AISelect,object,31.5,5,"Yes, I use AI tools monthly or infrequently | Yes, I use AI tools weekly | Yes, I use AI tools daily"
+2025,AISent,object,32.0,6,Indifferent | Favorable | Very favorable
+2025,AIAcc,object,32.3,5,Neither trust nor distrust | Somewhat trust | Somewhat distrust
+2025,AIComplex,object,32.3,6,"Bad at handling complex tasks | Neither good or bad at handling complex tasks | Good, but not great at handling complex "
+2025,AIToolCurrently partially AI,object,57.3,3746,Learning about a codebase;Writing code;Search for answers | Learning new concepts or technologies | Documenting code;Deb
+2025,AIToolDon't plan to use AI for this task,object,48.4,3558,Project planning;Deployment and monitoring;Learning new concepts or technologies | Learning about a codebase;Project pla
+2025,AIToolPlan to partially use AI,object,54.1,4460,Documenting code;Debugging or fixing code;Testing code;Committing and reviewing code;Predictive analytics;Generating con
+2025,AIToolPlan to mostly use AI,object,73.9,2214,Learning about a codebase;Writing code;Generating content or synthetic data | Search for answers;Generating content or s
+2025,AIToolCurrently mostly AI,object,77.2,1747,Testing code;Learning new concepts or technologies | Search for answers;Learning new concepts or technologies | Search f
+2025,AIFrustration,object,35.9,100,"AI solutions that are almost right, but not quite | AI solutions that are almost right, but not quite;Debugging AI-gener"
+2025,AIExplain,object,46.0,11231,No | NO | partly
+2025,AIAgents,object,35.1,6,"Yes, I use AI agents at work monthly or infrequently | No, and I don't plan to | Yes, I use AI agents at work weekly"
+2025,AIAgentChange,object,35.6,5,"Not at all or minimally | Yes, somewhat | Yes, to a great extent"
+2025,AIAgent_Uses,object,75.0,397,Software engineering | Software engineering;Business process automation;Decision intelligence;IT operations | Software e
+2025,AgentUsesGeneral,object,88.2,152,Multi-platform search enablement | Language processing | Language processing;Agent/multi-agent orchestration;Vector data
+2025,AIAgentImpactSomewhat agree,object,79.4,222,AI agents have increased my productivity.;AI agents have reduced the time spent on specific development tasks. | AI agen
+2025,AIAgentImpactNeutral,object,80.3,232,AI agents have helped me automate repetitive tasks.;AI agents have improved the quality of my code.;AI agents have accel
+2025,AIAgentImpactSomewhat disagree,object,88.2,161,AI agents have improved collaboration within my team. | AI agents have helped me automate repetitive tasks. | AI agents 
+2025,AIAgentImpactStrongly agree,object,86.4,200,AI agents have helped me automate repetitive tasks. | AI agents have increased my productivity.;AI agents have accelerat
+2025,AIAgentImpactStrongly disagree,object,92.3,159,AI agents have accelerated my learning about new technologies or codebases. | AI agents have accelerated my learning abo
+2025,AIAgentChallengesNeutral,object,56.7,126,I am concerned about the accuracy of the information provided by AI agents.;It takes significant time and effort to lear
+2025,AIAgentChallengesSomewhat disagree,object,75.4,89,Integrating AI agents with my existing tools and workflows can be difficult.;My company's IT and/or InfoSec teams have s
+2025,AIAgentChallengesStrongly agree,object,53.0,123,The cost of using certain AI agent platforms is a barrier.;I have concerns about the security and privacy of data when u
+2025,AIAgentChallengesSomewhat agree,object,55.4,124,Integrating AI agents with my existing tools and workflows can be difficult.;My company's IT and/or InfoSec teams have s
+2025,AIAgentChallengesStrongly disagree,object,81.1,83,My company's IT and/or InfoSec teams have strict rules that do not allow me to use AI agent tools or platforms | Integra
+2025,AIAgentKnowledge,object,93.1,528,Redis | Fireproof;LanceDB;Letta;Neo4j;Qdrant | GitHub MCP Server
+2025,AIAgentKnowWrite,object,98.4,561,ollama | copilot | opensearch
+2025,AIAgentOrchestration,object,92.4,620,Vertex AI | Vertex AI;Agno;AutoGen (Microsoft);CrewAI;IBM watsonx.ai;Llama Index;Ollama;Semantic Kernel | Ollama
+2025,AIAgentOrchWrite,object,99.0,332,Spring AI | copilot | warp
+2025,AIAgentObserveSecure,object,94.5,314,Sentry | Galileo;Honeycomb;Metero;New Relic;opik;Snyk | Honeycomb
+2025,AIAgentObsWrite,object,99.5,195,"Dynatrace | chatgpt | Splunk ML, Dynatrace Davis"
+2025,AIAgentExternal,object,83.1,1311,ChatGPT | ChatGPT;Claude Code;GitHub Copilot;Google Gemini | ChatGPT;Claude Code
+2025,AIAgentExtWrite,object,98.3,421,"Cursor | codeium, windsurf | warp"
+2025,AIHuman,object,40.7,574,When I don’t trust AI’s answers | When I don’t trust AI’s answers;When I want to fully understand something;When I want 
+2025,AIOpen,object,54.2,20138,"Troubleshooting, profiling, debugging | All skills. AI is a flop. | Understand how things actually work, problem solving"
+2025,ConvertedCompYearly,float64,51.3,6237,61256.0 | 104413.0 | 53061.0
+2025,JobSat,float64,45.8,11,10.0 | 9.0 | 8.0
+2025,year,int64,0.0,1,2025

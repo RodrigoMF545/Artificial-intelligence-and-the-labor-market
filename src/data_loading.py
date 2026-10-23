@@ -5,6 +5,8 @@ import requests
 BASE = "https://github.com/StackExchange/Survey/raw/refs/heads/main/packages/archive"
 RAW = Path("data/raw")
 
+YEARS = (2024, 2025)
+
 def download_year(year: int) -> Path:
     RAW.mkdir(parents= True, exist_ok= True)
     dest = RAW / f"results_{year}.csv"
