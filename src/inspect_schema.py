@@ -30,20 +30,20 @@ def main() -> None:
         df = load_year(y)
         cols[y] = set(df.columns)
         frames.append(overview(df, y))
-        print(f"{y}: {df.shape[0]:,} linhas x {df.shape[1]} colunas")
+        print(f"{y}: {df.shape[0]:,} rows x {df.shape[1]} columns")
     pd.concat(frames).to_csv(DOCS / "columns_overview.csv", index=False)
 
     a, b = YEARS
     diff = (
-        [(c, "ambos") for c in sorted(cols[a] & cols[b])]
-        + [(c, f"só {a}") for c in sorted(cols[a] - cols[b])]
-        + [(c, f"só {b}") for c in sorted(cols[b] - cols[a])]
+        [(c, "both") for c in sorted(cols[a] & cols[b])]
+        + [(c, f"only {a}") for c in sorted(cols[a] - cols[b])]
+        + [(c, f"only {b}") for c in sorted(cols[b] - cols[a])]
     )
-    pd.DataFrame(diff, columns=["column", "presente_em"]).to_csv(
+    pd.DataFrame(diff, columns=["column", "present_in"]).to_csv(
         DOCS / "columns_diff.csv", index=False
     )
-    print(f"Em ambos: {len(cols[a] & cols[b])} | só {a}: {len(cols[a]-cols[b])} "
-          f"| só {b}: {len(cols[b]-cols[a])}")
+    print(f"In both: {len(cols[a] & cols[b])} | only {a}: {len(cols[a]-cols[b])} "
+          f"| only {b}: {len(cols[b]-cols[a])}")
 
 
 if __name__ == "__main__":

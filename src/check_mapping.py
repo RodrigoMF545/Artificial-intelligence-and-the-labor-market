@@ -1,4 +1,4 @@
-"""Valida o MAPPING contra os dados reais e mostra os valores das colunas de IA.
+"""Validates MAPPING against the actual data and displays the values in the AI columns.
 
 Uso:
     python -m src.check_mapping
@@ -9,7 +9,7 @@ from data_loading import YEARS, load_year
 
 def main() -> None:
     data = {y: load_year(y) for y in YEARS}
-    print("=== Validação do mapeamento ===")
+    print("=== Mapping validation ===")
     ok = True
     for canon, per_year in MAPPING.items():
         for y, col in per_year.items():
@@ -17,11 +17,11 @@ def main() -> None:
                 continue
             if col not in data[y].columns:
                 ok = False
-                print(f"[FALTA] {canon}: '{col}' não existe em {y}")
+                print(f"[MISSING] {canon}: '{col}' does not exist in {y}")
     if ok:
-        print("Todas as colunas mapeadas existem.")
+        print("All mapped columns exist.")
 
-    print("\n=== Valores das colunas de IA (para harmonizar entre anos) ===")
+    print("\n=== AI column values (for harmonization across years) ===")
     for canon in [k for k in MAPPING if k.startswith("ai_")]:
         for y in YEARS:
             col = MAPPING[canon].get(y)
@@ -29,7 +29,7 @@ def main() -> None:
                 print(f"\n[{canon} | {y} | {col}]")
                 print(data[y][col].value_counts(dropna=False).head(10).to_string())
 
-    print("\n=== Colunas com 'AI' no nome (candidatas a incluir no mapeamento) ===")
+    print("\n=== Columns with 'AI' in the name (candidates for the mapping) ===")
     for y in YEARS:
         ai_cols = [c for c in data[y].columns if "AI" in c]
         print(f"{y}: {ai_cols}")
