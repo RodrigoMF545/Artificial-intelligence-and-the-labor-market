@@ -2,6 +2,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+docs/decisions.md
 
 # Python
 .venv/
