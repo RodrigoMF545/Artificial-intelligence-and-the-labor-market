@@ -1,0 +1,4 @@
+cluster,n,pct_amostra,exp_mediana,pct_usa_ia,salario_mediano,linguagens_distintivas,funcoes_principais
+0,12919,33.4,10.0,72.3,69609.0,"TypeScript (67%), HTML/CSS (83%), JavaScript (93%), C# (39%)","Developer, full-stack (64%), Developer, front-end (12%), Developer, back-end (8%)"
+1,11436,29.5,10.0,77.5,76307.0,"Go (29%), Bash/Shell (all shells) (75%), C (28%), Python (90%)","Developer, full-stack (30%), Developer, back-end (20%), Architect, software or solutions (5%)"
+2,14351,37.1,10.0,64.9,74423.0,"C++ (22%), C (17%), Python (53%), Rust (12%)","Developer, back-end (28%), Developer, full-stack (9%), Developer, desktop or enterprise applications (7%)"

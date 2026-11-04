@@ -1,0 +1,4 @@
+,r2,mae_log,erro_mediano_%
+baseline (mediana),-0.034,0.705,47.3
+regressão linear,0.583,0.426,28.1
+XGBoost,0.611,0.401,26.1
