@@ -1,0 +1,133 @@
+// =============================================================================
+//  medidas.dax: medidas DAX do dashboard (cria cada uma em "Nova medida")
+//  Tabelas: fato_respostas, ponte_funcoes, ponte_linguagens, dim_pais, dim_faixa
+//  Pré-requisito: parâmetro "Amostra minima" (Modelação > Novo parâmetro >
+//  Intervalo numérico: mín 30, máx 300, incremento 10, valor por defeito 100).
+//  Cria automaticamente a tabela "Amostra minima" e a medida [Amostra minima Value].
+//  NOTA: estas medidas NÃO foram testadas no Power BI Desktop; confirma os
+//  resultados contra os valores do notebook (ver GUIA_POWERBI.md, "Validação").
+// =============================================================================
+
+
+// ------------------------------ BASE ----------------------------------------
+Respostas = COUNTROWS ( fato_respostas )
+
+// COUNT ignora vazios: conta só quem respondeu (NULL nunca é "não usa")
+Respostas com info IA = COUNT ( fato_respostas[usa_ia] )
+
+Utilizadores IA = SUM ( fato_respostas[usa_ia] )
+
+Respostas com salario = COUNT ( fato_respostas[salario_usd] )
+
+
+// ------------------------------ Q1: ADOÇÃO ----------------------------------
+// AVERAGE ignora vazios, tal como o AVG do SQL
+% Usa IA = AVERAGE ( fato_respostas[usa_ia] )
+
+% Usa IA (n minimo) =
+IF ( [Respostas com info IA] >= [Amostra minima Value], [% Usa IA] )
+
+% Usa IA 2024 =
+CALCULATE ( [% Usa IA (n minimo)], fato_respostas[ano] = 2024 )
+
+% Usa IA 2025 =
+CALCULATE ( [% Usa IA (n minimo)], fato_respostas[ano] = 2025 )
+
+// Cuidado: em DAX, BLANK() - número = -número. Por isso o IF protege os vazios.
+Variacao adocao (pp) =
+IF (
+    NOT ISBLANK ( [% Usa IA 2024] ) && NOT ISBLANK ( [% Usa IA 2025] ),
+    ( [% Usa IA 2025] - [% Usa IA 2024] ) * 100
+)
+
+// Margem de erro a 95% de uma proporção (pontos percentuais)
+Margem de erro (pp) =
+VAR n = [Respostas com info IA]
+VAR p = [% Usa IA]
+RETURN
+    IF ( n > 0, 1.96 * SQRT ( p * ( 1 - p ) / n ) * 100 )
+
+Titulo adocao =
+"Adoção de IA (só células com n ≥ " & [Amostra minima Value] & ")"
+
+// Composição da amostra: % de respostas de cada faixa DENTRO de cada ano
+% da amostra do ano =
+DIVIDE (
+    [Respostas],
+    CALCULATE ( [Respostas], ALLEXCEPT ( fato_respostas, fato_respostas[ano] ) )
+)
+
+
+// ------------------------------ Q2/Q3: SALÁRIO ------------------------------
+Mediana salario = MEDIAN ( fato_respostas[salario_usd] )
+
+Media salario = AVERAGE ( fato_respostas[salario_usd] )
+
+Mediana salario (n minimo) =
+IF ( [Respostas com salario] >= [Amostra minima Value], [Mediana salario] )
+
+Mediana salario com IA =
+CALCULATE ( [Mediana salario (n minimo)], fato_respostas[usa_ia] = 1 )
+
+Mediana salario sem IA =
+CALCULATE ( [Mediana salario (n minimo)], fato_respostas[usa_ia] = 0 )
+
+// Diferença BRUTA/estratificada (sem controlar país, função...): só descritiva
+Diferenca salario IA vs sem IA (%) =
+IF (
+    NOT ISBLANK ( [Mediana salario com IA] ) && NOT ISBLANK ( [Mediana salario sem IA] ),
+    DIVIDE ( [Mediana salario com IA], [Mediana salario sem IA] ) - 1
+)
+
+Mediana salario 2024 = CALCULATE ( [Mediana salario (n minimo)], fato_respostas[ano] = 2024 )
+
+Mediana salario 2025 = CALCULATE ( [Mediana salario (n minimo)], fato_respostas[ano] = 2025 )
+
+Variacao mediana 2024-2025 (%) =
+IF (
+    NOT ISBLANK ( [Mediana salario 2024] ) && NOT ISBLANK ( [Mediana salario 2025] ),
+    DIVIDE ( [Mediana salario 2025], [Mediana salario 2024] ) - 1
+)
+
+
+// ------------------------------ Q3: RANKING (window function do SQL) ---------
+// Usar numa matriz: linhas = dim_pais[pais_curto], colunas = ponte_linguagens[linguagem],
+// com filtro de página ano = 2025. RANKX recomeça em cada país (como PARTITION BY).
+// Empates: por defeito dão a mesma posição e saltam a seguinte (como RANK no SQL).
+Mediana salario (n>=30) =
+IF ( [Respostas com salario] >= 30, [Mediana salario] )
+
+Ranking salario da linguagem no pais =
+IF (
+    NOT ISBLANK ( [Mediana salario (n>=30)] ),
+    RANKX ( ALLSELECTED ( ponte_linguagens[linguagem] ), [Mediana salario (n>=30)], , DESC )
+)
+
+
+// ------------------------------ Q4: CONFIANÇA -------------------------------
+// Só utilizadores (usa_ia = 1): é a base comparável entre 2024 e 2025
+Utilizadores com resposta de confianca =
+CALCULATE ( COUNT ( fato_respostas[confianca_score] ), fato_respostas[usa_ia] = 1 )
+
+% Desconfia =
+DIVIDE (
+    CALCULATE (
+        COUNT ( fato_respostas[confianca_score] ),
+        fato_respostas[usa_ia] = 1,
+        fato_respostas[confianca_score] <= 2
+    ),
+    [Utilizadores com resposta de confianca]
+)
+
+% Confia =
+DIVIDE (
+    CALCULATE (
+        COUNT ( fato_respostas[confianca_score] ),
+        fato_respostas[usa_ia] = 1,
+        fato_respostas[confianca_score] >= 4
+    ),
+    [Utilizadores com resposta de confianca]
+)
+
+Confianca media (1-5) =
+CALCULATE ( AVERAGE ( fato_respostas[confianca_score] ), fato_respostas[usa_ia] = 1 )
