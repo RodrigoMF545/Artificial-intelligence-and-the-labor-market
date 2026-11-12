@@ -3,6 +3,10 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 docs/decisions.md
+powerbi/data/*
+powerbi/GUIA_PowerBI.md
+
+reports/*
 
 # Python
 .venv/
